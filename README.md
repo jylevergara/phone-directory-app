@@ -4,4 +4,5 @@ This program is a command-line phone directory that allows users to search for c
 
 ## Execution
 
-1. **Display Title**: Upon starting, the program displays the specified title
+1. **Display Title**: Upon starting, the program displays the specified title.
+2. **User Prompt**: The user is prompted to enter a partial name for searching.
