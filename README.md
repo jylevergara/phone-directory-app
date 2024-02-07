@@ -9,3 +9,5 @@ This program is a command-line phone directory that allows users to search for c
 3. **Search Operation**:
   - If a name containing the partial entry is found, the program displays the full record
   - If no match is found, nothing is displayed.
+4. **Exit Option**: Entering '!' will exit the program immediately.
+5. **End Message**: If the data file cannot be opened, an error message is displayed, and the program exits. On successful exit, a thank you message is shown.
