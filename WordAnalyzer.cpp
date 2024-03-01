@@ -13,6 +13,19 @@ namespace sdds
              << "of words and their occurrences in the text file." << endl;
     }
 
+    int readWord(char *word, FILE *fptr, int maxLen)
+    {
+        int ch;
+        int i = 0;
+        do
+        {
+            ch = fgetc(fptr);
+            word[i++] = ch;
+        } while (ch != EOF && !isSpace(ch) && i < maxLen);
+        word[i] = '\0';
+        return !(i == 1 && ch == EOF);
+    }
+
     void wordStats(const char *filename)
     {
         FILE *fptr = fopen(filename, "r");
