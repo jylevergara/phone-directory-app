@@ -15,6 +15,7 @@ namespace sdds
 
     void programTitle();
     void wordStats(const char *filename);
+    void addWord(Word words[], int* index, const char newWord[]);
 
 }
 

@@ -26,6 +26,13 @@ namespace sdds
         return !(i == 1 && ch == EOF);
     }
 
+    void addWord(Word words[], int *index, const char newWord[])
+    {
+        strCpy(words[*index].letters, newWord);
+        words[*index].count++;
+        (*index)++;
+    }
+
     void wordStats(const char *filename)
     {
         FILE *fptr = fopen(filename, "r");
