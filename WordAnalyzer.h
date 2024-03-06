@@ -12,10 +12,13 @@ namespace sdds
     };
 
     int readWord(char *word, FILE *fptr, int maxLen);
+    int searchWords(const Word words[], int num, const char word[]);
+
 
     void programTitle();
     void wordStats(const char *filename);
     void addWord(Word words[], int* index, const char newWord[]);
+    void listWords(const Word words[], int noOfWords, const char* theTitle);
 
 }
 

@@ -13,6 +13,33 @@ namespace sdds
              << "of words and their occurrences in the text file." << endl;
     }
 
+    int searchWords(const Word words[], int num, const char word[])
+    {
+        int i;
+        int foundIndex = -1; // will be set to found index; if not found sould be less than 0
+        for (i = 0; foundIndex == -1 && i < num; i++)
+        {
+            // while not found and i is less than number of words
+            if (strCmp(words[i].letters, word) == 0)
+            {                   // if word is already read and found in the list of previous words
+                foundIndex = i; // set the index to be returned.
+            }
+        }
+        return foundIndex;
+    }
+
+    void listWords(const Word words[], int noOfWords, const char *theTitle)
+    {
+        int i;
+        int maxLen = findMaxLen(words, noOfWords);
+        title(theTitle, maxLen);
+        for (i = 0; i < noOfWords; i++)
+        {
+            print(&words[i], true, maxLen);
+        }
+        endList();
+    }
+
     int readWord(char *word, FILE *fptr, int maxLen)
     {
         int ch;
