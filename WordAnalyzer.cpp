@@ -7,6 +7,8 @@ using namespace std;
 
 namespace sdds
 {
+    const int MAX_NO_OF_WORDS = 500;
+    
     void programTitle()
     {
         cout << "This program reads a text file and analyzes and reports the number" << endl
