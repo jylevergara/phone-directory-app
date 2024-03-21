@@ -42,6 +42,27 @@ namespace sdds
         endList();
     }
 
+    void sort(Word words[], int cnt, int sortType) {
+        int i, j;
+        for (i = 0; i < cnt - 1; i++) {
+            for (j = 0; j < cnt - i - 1; j++) {
+                if (sortType == SORT_BY_OCCURANCE) {
+                    if (words[j].count < words[j + 1].count) {
+                        swap(&words[j], &words[j + 1]);
+                    }
+                }
+                else if (sortType == SORT_ALPHABETICALLY) {
+                    if (strCmp(words[j].letters, words[j + 1].letters) > 0) {
+                        swap(&words[j], &words[j + 1]);
+                    }
+                }
+                else {
+
+                }
+            }
+        }
+    }
+
     int readWord(char *word, FILE *fptr, int maxLen)
     {
         int ch;

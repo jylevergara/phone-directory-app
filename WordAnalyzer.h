@@ -19,6 +19,7 @@ namespace sdds
     void wordStats(const char *filename);
     void addWord(Word words[], int* index, const char newWord[]);
     void listWords(const Word words[], int noOfWords, const char* theTitle);
+    void sort(Word words[], int cnt, int sortType);
 
 }
 
