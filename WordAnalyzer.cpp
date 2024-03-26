@@ -56,9 +56,6 @@ namespace sdds
                         swap(&words[j], &words[j + 1]);
                     }
                 }
-                else {
-
-                }
             }
         }
     }
