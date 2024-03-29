@@ -20,6 +20,7 @@ namespace sdds
     void addWord(Word words[], int* index, const char newWord[]);
     void listWords(const Word words[], int noOfWords, const char* theTitle);
     void sort(Word words[], int cnt, int sortType);
+    void totalWordsStat(int totNoWrds, int totalOverAll, int longestWord);
 
 }
 

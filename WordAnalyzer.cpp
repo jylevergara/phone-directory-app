@@ -17,6 +17,12 @@ namespace sdds
              << "of words and their occurrences in the text file." << endl;
     }
 
+        void totalWordsStat(int totNoWrds, int totalOverAll, int longestWord) {
+        cout << "Total number of words used: " << totNoWrds << endl;
+        cout << "Total number of words overall: " << totalOverAll << endl;
+        cout << "Longest word used had " << longestWord << " characters." << endl;
+    }
+
     int searchWords(const Word words[], int num, const char word[])
     {
         int i;
