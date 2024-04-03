@@ -10,14 +10,15 @@ namespace sdds
     const int MAX_NO_OF_WORDS = 500;
     const int SORT_BY_OCCURANCE = 1;
     const int SORT_ALPHABETICALLY = 0;
-    
+
     void programTitle()
     {
         cout << "This program reads a text file and analyzes and reports the number" << endl
              << "of words and their occurrences in the text file." << endl;
     }
 
-        void totalWordsStat(int totNoWrds, int totalOverAll, int longestWord) {
+    void totalWordsStat(int totNoWrds, int totalOverAll, int longestWord)
+    {
         cout << "Total number of words used: " << totNoWrds << endl;
         cout << "Total number of words overall: " << totalOverAll << endl;
         cout << "Longest word used had " << longestWord << " characters." << endl;
@@ -27,7 +28,7 @@ namespace sdds
     {
         int i;
         int foundIndex = -1; // will be set to found index; if not found should be less than 0
-        
+
         for (i = 0; foundIndex == -1 && i < num; i++) // while not found and i is less than number of words
         {
             if (strCmp(words[i].letters, word) == 0) // if word is already read and found in the list of previous words
@@ -50,17 +51,24 @@ namespace sdds
         endList();
     }
 
-    void sort(Word words[], int cnt, int sortType) {
+    void sort(Word words[], int cnt, int sortType)
+    {
         int i, j;
-        for (i = 0; i < cnt - 1; i++) {
-            for (j = 0; j < cnt - i - 1; j++) {
-                if (sortType == SORT_BY_OCCURANCE) {
-                    if (words[j].count < words[j + 1].count) {
+        for (i = 0; i < cnt - 1; i++)
+        {
+            for (j = 0; j < cnt - i - 1; j++)
+            {
+                if (sortType == SORT_BY_OCCURANCE)
+                {
+                    if (words[j].count < words[j + 1].count)
+                    {
                         swap(&words[j], &words[j + 1]);
                     }
                 }
-                else if (sortType == SORT_ALPHABETICALLY) {
-                    if (strCmp(words[j].letters, words[j + 1].letters) > 0) {
+                else if (sortType == SORT_ALPHABETICALLY)
+                {
+                    if (strCmp(words[j].letters, words[j + 1].letters) > 0)
+                    {
                         swap(&words[j], &words[j + 1]);
                     }
                 }
