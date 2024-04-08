@@ -96,6 +96,14 @@ namespace sdds
         (*index)++;
     }
 
+        int totalCount(const Word* words, int num) {
+        int total = 0;
+        do {
+            total += words[--num].count;
+        } while (num);
+        return total;
+    }
+
     void wordStats(const char *filename)
     {
         FILE *fptr = fopen(filename, "r");

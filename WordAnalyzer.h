@@ -13,6 +13,7 @@ namespace sdds
 
     int readWord(char *word, FILE *fptr, int maxLen);
     int searchWords(const Word words[], int num, const char word[]);
+    int totalCount(const Word* words, int num);
 
 
     void programTitle();
