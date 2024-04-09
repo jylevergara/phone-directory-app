@@ -96,9 +96,11 @@ namespace sdds
         (*index)++;
     }
 
-        int totalCount(const Word* words, int num) {
+    int totalCount(const Word *words, int num)
+    {
         int total = 0;
-        do {
+        do
+        {
             total += words[--num].count;
         } while (num);
         return total;
