@@ -39,6 +39,10 @@ namespace sdds
         return foundIndex;
     }
 
+        void endList() {
+        cout << "------------------------------------------------" << endl;
+    }
+
     void listWords(const Word words[], int noOfWords, const char *theTitle)
     {
         int i;
