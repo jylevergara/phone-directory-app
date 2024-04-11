@@ -39,7 +39,8 @@ namespace sdds
         return foundIndex;
     }
 
-        void endList() {
+    void endList()
+    {
         cout << "------------------------------------------------" << endl;
     }
 
