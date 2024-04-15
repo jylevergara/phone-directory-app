@@ -5,7 +5,7 @@
 
 using namespace std;
 
-namespace sdds
+namespace phonedirectory
 {
     const int MAX_NO_OF_WORDS = 500;
     const int SORT_BY_OCCURANCE = 1;
