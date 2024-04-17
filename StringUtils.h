@@ -3,6 +3,9 @@
 
 namespace phonedirectory {
     void trim(char word[]);
+    int isAlpha(char ch);
+    void strCpy(char* des, const char* src);
+     int strLen(const char* str);
 
 }
 
