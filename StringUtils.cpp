@@ -2,6 +2,11 @@
 
 namespace phonedirectory
 {
+    // returns the lower case value of a character
+    char toLower(char ch) {
+        if (ch >= 'A' && ch <= 'Z') ch += ('a' - 'A');
+        return ch;
+    }
 
         // returns true if ch is alphabetical
     int isAlpha(char ch) {

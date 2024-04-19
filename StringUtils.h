@@ -6,6 +6,7 @@ namespace phonedirectory {
     int isAlpha(char ch);
     void strCpy(char* des, const char* src);
      int strLen(const char* str);
+     char toLower(char ch);
 
 }
 
