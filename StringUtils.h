@@ -7,6 +7,7 @@ namespace phonedirectory {
     void strCpy(char* des, const char* src);
      int strLen(const char* str);
      char toLower(char ch);
+     int strCmp(const char* s1, const char* s2);
 
 }
 

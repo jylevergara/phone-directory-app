@@ -8,6 +8,16 @@ namespace phonedirectory
         return ch;
     }
 
+    // compares s1 and s2 cStrings and returns:
+// > 0 if s1 > s2
+// < 0 if s1 < s3
+// == 0 if s1 == s2
+    int strCmp(const char* s1, const char* s2) {
+        int i;
+        for (i = 0; s1[i] && s2[i] && s1[i] == s2[i]; i++);
+        return s1[i] - s2[i];
+    }
+
         // returns true if ch is alphabetical
     int isAlpha(char ch) {
         return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
