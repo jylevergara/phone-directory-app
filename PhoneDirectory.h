@@ -3,8 +3,9 @@
 
 #include <cstdio>
 
-namespace sdds {
-
+namespace phonedirectory
+{
+    void phoneDir(const char *programTitle, const char *fileName);
 }
 
-#endif 
+#endif
