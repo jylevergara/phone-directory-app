@@ -4,10 +4,12 @@
 
 using namespace std;
 
-namespace phonedirectory {
-const int MAX_NAME_LEN = 51;
+namespace phonedirectory
+{
+    const int MAX_NAME_LEN = 51;
 
-    void phoneDir(const char *programTitle, const char *fileName) {
+    void phoneDir(const char *programTitle, const char *fileName)
+    {
         FILE *fptr;
         char input[MAX_NAME_LEN], inputLowercase[MAX_NAME_LEN];
         char name[MAX_NAME_LEN], number[5], area[4], prefix[4];
@@ -16,9 +18,11 @@ const int MAX_NAME_LEN = 51;
         cout << programTitle << " phone direcotry search" << endl;
         cout << "-------------------------------------------------------" << endl;
 
-        while (repeat) {
+        while (repeat)
+        {
             fptr = fopen(fileName, "r");
-            if (!fptr) {
+            if (!fptr)
+            {
                 cout << fileName << " file not found!" << endl;
                 break;
             }
@@ -29,7 +33,8 @@ const int MAX_NAME_LEN = 51;
             repeat = strCmp(input, "!") != 0;
 
             // Loop until fscanf reaches the end of the file
-            while (!feof(fptr)) {
+            while (!feof(fptr))
+            {
                 // Read line from input file
                 fscanf(fptr, "%[^\t]\t%s\t%s\t%s\n", name, area, prefix, number);
                 // Convert name to lower case
@@ -41,7 +46,8 @@ const int MAX_NAME_LEN = 51;
                 isMatch = strContains(nameLowercase, inputLowercase);
 
                 // > if match, print the record
-                if (isMatch == 0) {
+                if (isMatch == 0)
+                {
                     cout << name << ": (" << area << ") " << prefix << "-" << number << endl;
                 }
             }
