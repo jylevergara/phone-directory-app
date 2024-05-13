@@ -30,6 +30,15 @@ namespace phonedirectory
         des[i] = 0;
     }
 
+    // copies the  lower case version of the source into des
+    void toLowerCaseAndCopy(char des[], const char source[]) {
+        int i = 0, j = 0;
+        for (; source[i] != 0; i++) {
+            des[j++] = toLower(source[i]);
+        }
+        des[j] = 0;
+    }
+
     // returns the length of str
     int strLen(const char* str) {
         int len;
