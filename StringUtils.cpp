@@ -28,6 +28,27 @@ namespace phonedirectory
         return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
     }
 
+    // checks if one string is contained within another string
+    int strContains(const char *str, const char *search) {
+        int i, result = 1;
+        int strLength = strLen(str);
+        int searchLength = strLen(search);
+        char *strPiece = nullptr;
+        strPiece = new char[strLength + 1];
+
+        for (i = 0; i <= (strLength - searchLength); i++) {
+            strCpy(strPiece, &str[i]);
+            trim(strPiece);
+            if (strnCmp(strPiece, search, searchLength) == 0) {
+                result = 0;
+                break;
+            }
+        }
+        delete[] strPiece;
+        strPiece = nullptr;
+        return result;
+    }
+
     // copies src to des
     void strCpy(char *des, const char *src)
     {

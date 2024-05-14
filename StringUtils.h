@@ -9,6 +9,7 @@ namespace phonedirectory {
      char toLower(char ch);
      int strCmp(const char* s1, const char* s2);
      void toLowerCaseAndCopy(char des[], const char source[]);
+     int strContains(const char *str, const char *search)
 }
 
 #endif
