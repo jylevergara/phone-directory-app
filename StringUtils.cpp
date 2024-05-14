@@ -3,46 +3,57 @@
 namespace phonedirectory
 {
     // returns the lower case value of a character
-    char toLower(char ch) {
-        if (ch >= 'A' && ch <= 'Z') ch += ('a' - 'A');
+    char toLower(char ch)
+    {
+        if (ch >= 'A' && ch <= 'Z')
+            ch += ('a' - 'A');
         return ch;
     }
 
     // compares s1 and s2 cStrings and returns:
-// > 0 if s1 > s2
-// < 0 if s1 < s3
-// == 0 if s1 == s2
-    int strCmp(const char* s1, const char* s2) {
+    // > 0 if s1 > s2
+    // < 0 if s1 < s3
+    // == 0 if s1 == s2
+    int strCmp(const char *s1, const char *s2)
+    {
         int i;
-        for (i = 0; s1[i] && s2[i] && s1[i] == s2[i]; i++);
+        for (i = 0; s1[i] && s2[i] && s1[i] == s2[i]; i++)
+            ;
         return s1[i] - s2[i];
     }
 
-        // returns true if ch is alphabetical
-    int isAlpha(char ch) {
+    // returns true if ch is alphabetical
+    int isAlpha(char ch)
+    {
         return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
     }
 
     // copies src to des
-    void strCpy(char* des, const char* src) {
+    void strCpy(char *des, const char *src)
+    {
         int i;
-        for (i = 0; src[i]; i++) des[i] = src[i];
+        for (i = 0; src[i]; i++)
+            des[i] = src[i];
         des[i] = 0;
     }
 
     // copies the  lower case version of the source into des
-    void toLowerCaseAndCopy(char des[], const char source[]) {
+    void toLowerCaseAndCopy(char des[], const char source[])
+    {
         int i = 0, j = 0;
-        for (; source[i] != 0; i++) {
+        for (; source[i] != 0; i++)
+        {
             des[j++] = toLower(source[i]);
         }
         des[j] = 0;
     }
 
     // returns the length of str
-    int strLen(const char* str) {
+    int strLen(const char *str)
+    {
         int len;
-        for (len = 0; str[len]; len++);
+        for (len = 0; str[len]; len++)
+            ;
         return len;
     }
 
