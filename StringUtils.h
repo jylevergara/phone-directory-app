@@ -13,6 +13,7 @@ namespace phonedirectory
     int strContains(const char *str, const char *search);
     int strCmp(const char *s1, const char *s2);
     int strnCmp(const char *s1, const char *s2, int len);
+    void strCpy(char* des, const char* src);
 }
 
 #endif
