@@ -29,17 +29,20 @@ namespace phonedirectory
     }
 
     // checks if one string is contained within another string
-    int strContains(const char *str, const char *search) {
+    int strContains(const char *str, const char *search)
+    {
         int i, result = 1;
         int strLength = strLen(str);
         int searchLength = strLen(search);
         char *strPiece = nullptr;
         strPiece = new char[strLength + 1];
 
-        for (i = 0; i <= (strLength - searchLength); i++) {
+        for (i = 0; i <= (strLength - searchLength); i++)
+        {
             strCpy(strPiece, &str[i]);
             trim(strPiece);
-            if (strnCmp(strPiece, search, searchLength) == 0) {
+            if (strnCmp(strPiece, search, searchLength) == 0)
+            {
                 result = 0;
                 break;
             }
@@ -47,6 +50,30 @@ namespace phonedirectory
         delete[] strPiece;
         strPiece = nullptr;
         return result;
+    }
+    // compares s1 and s2 cStrings and returns:
+    // > 0 if s1 > s2
+    // < 0 if s1 < s3
+    // == 0 if s1 == s2
+    int strCmp(const char *s1, const char *s2)
+    {
+        int i;
+        for (i = 0; s1[i] && s2[i] && s1[i] == s2[i]; i++)
+            ;
+        return s1[i] - s2[i];
+    }
+    // compares s1 and s2 cStrings upto len characters and returns:
+    // > 0 if s1 > s2
+    // < 0 if s1 < s3
+    // == 0 if s1 == s2
+    int strnCmp(const char *s1, const char *s2, int len)
+    {
+        int i = 0;
+        while (i < len - 1 && s1[i] && s2[i] && s1[i] == s2[i])
+        {
+            i++;
+        }
+        return s1[i] - s2[i];
     }
 
     // copies src to des
