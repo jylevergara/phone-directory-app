@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include "WordAnalyzer.h"
+#include "StringUtils.h"
 
 using namespace std;
 
@@ -22,6 +23,16 @@ namespace phonedirectory
         cout << "Total number of words used: " << totNoWrds << endl;
         cout << "Total number of words overall: " << totalOverAll << endl;
         cout << "Longest word used had " << longestWord << " characters." << endl;
+    }
+
+        int findMaxLen(const Word words[], int noOfWords) {
+        int longest = 0;
+        int i;
+        for (i = 0; i < noOfWords; i++) {
+            if (longest < strLen(words[i].letters))
+                longest = strLen(words[i].letters);
+        }
+        return longest;
     }
 
     int searchWords(const Word words[], int num, const char word[])
