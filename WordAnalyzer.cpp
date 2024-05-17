@@ -25,10 +25,12 @@ namespace phonedirectory
         cout << "Longest word used had " << longestWord << " characters." << endl;
     }
 
-        int findMaxLen(const Word words[], int noOfWords) {
+    int findMaxLen(const Word words[], int noOfWords)
+    {
         int longest = 0;
         int i;
-        for (i = 0; i < noOfWords; i++) {
+        for (i = 0; i < noOfWords; i++)
+        {
             if (longest < strLen(words[i].letters))
                 longest = strLen(words[i].letters);
         }
