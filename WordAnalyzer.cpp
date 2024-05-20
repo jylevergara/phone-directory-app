@@ -25,6 +25,12 @@ namespace phonedirectory
         cout << "Longest word used had " << longestWord << " characters." << endl;
     }
 
+        void title(const char* value, int len) { // uses iomanip header file
+        cout << value << endl;
+        cout << setw(len) << left << "Word";
+        cout << "No of  occurrence." << endl << "------------------------------------------------" << endl;
+    }
+
     int findMaxLen(const Word words[], int noOfWords)
     {
         int longest = 0;
