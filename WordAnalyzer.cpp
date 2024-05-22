@@ -25,7 +25,8 @@ namespace phonedirectory
         cout << "Longest word used had " << longestWord << " characters." << endl;
     }
 
-        void title(const char* value, int len) { // uses iomanip header file
+    void title(const char *value, int len)
+    { 
         cout << value << endl;
         cout << setw(len) << left << "Word";
         cout << "No of  occurrence." << endl << "------------------------------------------------" << endl;
