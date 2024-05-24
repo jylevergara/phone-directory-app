@@ -22,6 +22,12 @@ namespace phonedirectory
         return s1[i] - s2[i];
     }
 
+    // returns true if ch is a whitespace character
+    int isSpace(char ch)
+    {
+        return ch == ' ' || ch == '\t' || ch == '\n' || ch == '\v' || ch == '\f' || ch == '\r';
+    }
+
     // returns true if ch is alphabetical
     int isAlpha(char ch)
     {
@@ -60,7 +66,7 @@ namespace phonedirectory
         strPiece = nullptr;
         return result;
     }
-    
+
     // compares s1 and s2 cStrings and returns:
     // > 0 if s1 > s2
     // < 0 if s1 < s3
