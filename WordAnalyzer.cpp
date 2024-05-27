@@ -86,7 +86,7 @@ namespace phonedirectory
     }
 
     void print(const Word *w, int gotoNextLine, int len)
-    { // uses iomanip header file
+    {
         cout << setw(len) << left << w->letters;
         cout << setw(3) << right << w->count;
         if (gotoNextLine)
