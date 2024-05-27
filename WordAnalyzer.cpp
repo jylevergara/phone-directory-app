@@ -85,6 +85,14 @@ namespace phonedirectory
         *p2 = w;
     }
 
+    void print(const Word *w, int gotoNextLine, int len)
+    { // uses iomanip header file
+        cout << setw(len) << left << w->letters;
+        cout << setw(3) << right << w->count;
+        if (gotoNextLine)
+            cout << endl;
+    }
+
     void sort(Word words[], int cnt, int sortType)
     {
         int i, j;
