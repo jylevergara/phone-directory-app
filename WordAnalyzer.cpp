@@ -26,10 +26,11 @@ namespace phonedirectory
     }
 
     void title(const char *value, int len)
-    { 
+    {
         cout << value << endl;
         cout << setw(len) << left << "Word";
-        cout << "No of  occurrence." << endl << "------------------------------------------------" << endl;
+        cout << "No of  occurrence." << endl
+             << "------------------------------------------------" << endl;
     }
 
     int findMaxLen(const Word words[], int noOfWords)
@@ -74,6 +75,14 @@ namespace phonedirectory
             print(&words[i], true, maxLen);
         }
         endList();
+    }
+
+    void swap(Word *p1, Word *p2)
+    {
+        Word w;
+        w = *p1;
+        *p1 = *p2;
+        *p2 = w;
     }
 
     void sort(Word words[], int cnt, int sortType)

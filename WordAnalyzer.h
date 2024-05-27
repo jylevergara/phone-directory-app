@@ -19,6 +19,7 @@ namespace phonedirectory
     void totalWordsStat(int totNoWrds, int totalOverAll, int longestWord);
     int findMaxLen(const Word words[], int noOfWords);
     void listWords(const Word words[], int noOfWords, const char *theTitle);
+    void swap(Word* p1, Word* p2);
     void sort(Word words[], int cnt, int sortType);
     int totalCount(const Word *words, int num);
     void wordStats(const char *filename);
