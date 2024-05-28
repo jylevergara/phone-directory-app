@@ -15,7 +15,7 @@ namespace phonedirectory
         char name[MAX_NAME_LEN], number[5], area[4], prefix[4];
         char nameLowercase[MAX_NAME_LEN];
         int repeat = 1, isMatch;
-        cout << programTitle << " phone direcotry search" << endl;
+        cout << programTitle << " phone directory search" << endl;
         cout << "-------------------------------------------------------" << endl;
 
         while (repeat)
