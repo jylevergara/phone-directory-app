@@ -7,12 +7,13 @@ using namespace std;
 namespace phonedirectory
 {
     const int MAX_NAME_LEN = 51;
+    const int MAX_NUMBER_LEN = 5;
 
     void phoneDir(const char *programTitle, const char *fileName)
     {
         FILE *fptr;
         char input[MAX_NAME_LEN], inputLowercase[MAX_NAME_LEN];
-        char name[MAX_NAME_LEN], number[5], area[4], prefix[4];
+        char name[MAX_NAME_LEN], number[MAX_NUMBER_LEN], area[4], prefix[4];
         char nameLowercase[MAX_NAME_LEN];
         int repeat = 1, isMatch;
         cout << programTitle << " phone directory search" << endl;
