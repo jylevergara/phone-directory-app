@@ -67,18 +67,6 @@ namespace phonedirectory
         return result;
     }
 
-    // compares s1 and s2 cStrings and returns:
-    // > 0 if s1 > s2
-    // < 0 if s1 < s3
-    // == 0 if s1 == s2
-    int strCmp(const char *s1, const char *s2)
-    {
-        int i;
-        for (i = 0; s1[i] && s2[i] && s1[i] == s2[i]; i++)
-            ;
-        return s1[i] - s2[i];
-    }
-
     // compares s1 and s2 cStrings upto len characters and returns:
     // > 0 if s1 > s2
     // < 0 if s1 < s3
@@ -91,15 +79,6 @@ namespace phonedirectory
             i++;
         }
         return s1[i] - s2[i];
-    }
-
-    // copies src to des
-    void strCpy(char *des, const char *src)
-    {
-        int i;
-        for (i = 0; src[i]; i++)
-            des[i] = src[i];
-        des[i] = 0;
     }
 
     // copies the  lower case version of the source into des
