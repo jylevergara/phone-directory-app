@@ -9,12 +9,13 @@ namespace phonedirectory
     const int MAX_NAME_LEN = 51;
     const int MAX_NUMBER_LEN = 5;
     const int MAX_AREA_LEN = 4;
+    const int MAX_PREFIX_LEN = 4;
 
     void phoneDir(const char *programTitle, const char *fileName)
     {
         FILE *fptr;
         char input[MAX_NAME_LEN], inputLowercase[MAX_NAME_LEN];
-        char name[MAX_NAME_LEN], number[MAX_NUMBER_LEN], area[MAX_AREA_LEN], prefix[4];
+        char name[MAX_NAME_LEN], number[MAX_NUMBER_LEN], area[MAX_AREA_LEN], prefix[MAX_PREFIX_LEN];
         char nameLowercase[MAX_NAME_LEN];
         int repeat = 1, isMatch;
         cout << programTitle << " phone directory search" << endl;
