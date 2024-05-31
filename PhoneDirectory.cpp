@@ -30,7 +30,8 @@ namespace phonedirectory
                 break;
             }
 
-            cout << "Enter a partial name to search (no spaces) or enter '!' to exit" << endl;
+            cout << "Search: Enter a name or part of a name (no spaces allowed)\n";
+            cout << "        Type '!' to exit the program\n";
             cout << "> ";
             cin >> input;
             repeat = strCmp(input, "!") != 0;
