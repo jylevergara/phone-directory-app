@@ -1,6 +1,6 @@
 #include <iostream>
 #include "WordAnalyzer.h"
-using namespace sdds;
+using namespace phonedirectory;
 using namespace std;
 
 
