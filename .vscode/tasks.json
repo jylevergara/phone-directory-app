@@ -5,15 +5,14 @@
             "label": "C/C++: g++ build active file",
             "command": "/usr/bin/g++",
             "args": [
-                "-fdiagnostics-color=always",
+                "-std=c++11",
                 "-g",
-                "${file}",
+                "WordStats.cpp",
+                "WordAnalyzer.cpp",
+                "StringUtils.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "wordstats"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
             "problemMatcher": [
                 "$gcc"
             ],
