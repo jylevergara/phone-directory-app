@@ -3,3 +3,6 @@ Spock   415 555 0047
 Leonard McCoy   404 555	1966
 Picard  331	555	1701
 William Riker   206	555	1987
+Deanna Troi 617	555	2364
+Data    408	555	2285
+Geordi La Forge 313	555	1701
