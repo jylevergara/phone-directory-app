@@ -1,0 +1,5 @@
+James Kirk  212 555 1701
+Spock   415 555 0047
+Leonard McCoy   404 555	1966
+Picard  331	555	1701
+William Riker   206	555	1987
