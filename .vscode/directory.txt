@@ -6,3 +6,7 @@ William Riker   206	555	1987
 Deanna Troi 617	555	2364
 Data    408	555	2285
 Geordi La Forge 313	555	1701
+Benjamin Sisko	504	555	1993
+Jadzia Dax	404	555	2369
+Worf	415	555	2366
+Odo	612	555	3752
