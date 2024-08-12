@@ -13,3 +13,6 @@ Odo	612	555	3752
 Garak	011	555	2145
 Noonien Singh	415	555	1982
 Sarek	415	555	2230
+Jonathan Archer	202	555	2151
+Hikaru Sulu	415	555	1986
+Pavel Chekov	701	555	1967
