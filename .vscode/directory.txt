@@ -16,3 +16,10 @@ Sarek	415	555	2230
 Jonathan Archer	202	555	2151
 Hikaru Sulu	415	555	1986
 Pavel Chekov	701	555	1967
+Montgomery Scott	314	555	2222
+Guinan	212	555	2001
+Kathryn Janeway	312	555	7421
+Chakotay	505	555	1995
+Seven Nine	707	555	9999
+Torres	305	555	2371
+The Doctor  213	555	4747
